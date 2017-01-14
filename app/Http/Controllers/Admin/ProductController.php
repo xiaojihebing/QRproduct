@@ -16,7 +16,7 @@ class ProductController extends Controller
     //首页
     public function index()
 	{
-    	return view('admin/products/index')->withProducts(Product::all());
+    	return view('admin/products/index')->withProducts(Product::paginate(20));
 	}
 
 	//新增

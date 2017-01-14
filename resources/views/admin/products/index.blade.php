@@ -20,6 +20,8 @@
                           <th>#</th>
                           <th>产品名称</th>
                           <th>品牌</th>
+                          <th>型号</th>
+                          <th>容量</th>
                           <th>操作</th>
                         </tr>
                       </thead>
@@ -29,6 +31,8 @@
                           <td>{{ $product->id }}</td>
                           <td><a href="{{ url($product->tinyurl) }}">{{ $product->title }}</td>
                           <td>{{ $product->brand }}</td>
+                          <td>{{ $product->model }}</td>
+                          <td>{{ $product->capacity }}</td>
                           <td>
                             <a href="{{ url('admin/products/'.$product->id.'/edit') }}" class="btn btn-success">编辑</a>
                             <form action="{{ url('admin/products/'.$product->id) }}" method="POST" style="display: inline;">
@@ -40,6 +44,9 @@
                         @endforeach
                       </tbody>
                     </table>
+
+                    <!-- 分页 -->
+                    <div>{{ $products->links() }}</div>
 
                     <!-- @foreach ($products as $product)
                         <hr>
