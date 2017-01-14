@@ -67,17 +67,6 @@ class ProductController extends Controller
         	'brand' => 'required',
         	'model' => 'required',
         	// 'intropro' => 'required',
-        	// 'price' => '',
-        	// 'capacity' => '',
-        	// 'input' => '',
-        	// 'output' => '',
-        	// 'company' => '',
-        	// 'address' => '',
-        	// 'phone' => '',
-        	// 'website' => '',
-        	// 'color' => '',
-        	// 'size' => '',
-        	// 'weight' => '',
 		]);
 
 		$product = Product::find($id);

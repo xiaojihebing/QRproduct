@@ -39,7 +39,7 @@
 	   <div id="mcover_vard_face" class="mcover_vard_face tc" onclick="show_info();"></div>
 	   <div class="vcard_biz_face_wrap clearfloat">
 		<div class="vcard_biz_face fl" id="vcard_biz_face">
-		 <a onclick="show_face();"><div id="vcard_biz_face_img_show" style="background-image:url(http://qr.wzapk.com/static/logo.jpg)"></div></a>
+		 <a onclick="show_face();"><div id="vcard_biz_face_img_show" style="background-image:url({{ url('/') }}/images/logo.jpg)"></div></a>
 		</div>
 		<div class="vcard_biz_career" id="vcard_career">
 		 <div id="vcard_biz_name">{{ $product->title }}</div>
@@ -108,7 +108,7 @@
  </div>
 </div>
 
-<link href="http://qr.wzapk.com/static/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css">
 <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
 
 <style type="text/css">
