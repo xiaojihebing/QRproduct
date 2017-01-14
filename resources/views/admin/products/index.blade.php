@@ -46,7 +46,7 @@
                     </table>
 
                     <!-- 分页 -->
-                    <div>{{ $products->links() }}</div>
+                    <div class="text-center">{{ $products->links() }}</div>
 
                     <!-- @foreach ($products as $product)
                         <hr>

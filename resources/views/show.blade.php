@@ -83,7 +83,7 @@
    <div class="tree_box_content">
     <div class="desc">
      <div class="rich_text">
-      {{ $product->intropro }}
+      {!! $product->intropro !!}
 	 </div>
 	</div>
    </div>
@@ -100,7 +100,7 @@
    <div class="tree_box_content">
     <div class="desc">
 	 <div class="rich_text">
-	  {{ $product->introcom }}
+	  {!! $product->introcom !!}
      </div>
 	</div>
    </div>
