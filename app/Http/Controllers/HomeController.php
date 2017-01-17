@@ -30,9 +30,11 @@ class HomeController extends Controller
 
     public function show($id)
     {
-        // $product = Product::where('tinyurl', $id)->first();
-        // return $product;
-        // return view('welcome', compact('product'));
-        return view('show')->withProduct(Product::where('tinyurl', $id)->first());
+        $product = Product::where('tinyurl', $id)->first();
+        if ($product) {
+            return view('show')->withProduct($product);
+        } else {
+            return view('errors.nothing');
+        }
     }
 }
