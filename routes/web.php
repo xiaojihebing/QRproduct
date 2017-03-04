@@ -26,3 +26,5 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
 // });
 
 Route::get('/{id}', 'HomeController@show');
+
+Route::post('/post', 'PosterController@index');
